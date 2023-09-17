@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2D - YouTube Analytics</title>
+    <!-- Add a logo to display -->
+    <link rel="icon" href="https://yt3.googleusercontent.com/ytc/AOPolaRjHZVzFJmrC0pLTZP9I7LNj435FLM_mM8Z-Wqe=s176-c-k-c0x00ffffff-no-rj" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+ 
+        
+    <div class="container mt-5">
+        <div class="text-center">
+            <img src="https://yt3.googleusercontent.com/NKGf9fgtwo30V1L3ZyEtSquAKer9qZQ3fZ7LPTbmcsQ51KKeRoyNcThCtM5V428wquOacewHiw=w2120-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="A2D" class="img-fluid" width="auto" height="100">
+        </div>
+        <h1 class="text-center mb-4">Your  Soldiers ⚔️💂</h1>
+        <p class="text-center mb-4">This shows the soldiers with the most comments in your videos.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <div id="output" class="h4 mb-4"></div>
+                        </div>
+                        <table id="jsonTable" class="table table-bordered animate-table" style="display: none;">
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Soldier Name</th>
+                                    <th>No. of Comments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Table rows go here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <h1 class="text-center mb-4">Most Repeated Character in Video IDs</h1>
+            <h3 class="text-center mb-4" style="color: rgb(255, 0, 0);"><b>U</b> for <b>Unique</b> that is for you</h3>
+            <div class="text-center">
+                <img src="./img.png" alt="Repeating Character" class="img-fluid" width="auto" height="100">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <table id="letter" class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Character</th>
+                                        <th>No. of Occurrences</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Table rows go here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="mt-5 text-center">Comments with highest replies of each videos</h1>
+        <center>
+
+            <div id="video-container" class="row justify-content-center text-center">
+                <!-- Video cards will be dynamically generated here -->
+            </div>
+        </center>
+    </div>
+    <!-- Bootstrap JS (Popper.js and jQuery are required) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+
+  
+
+    <script src="./script.js"></script>
+</body>
+</html>
